@@ -12,5 +12,7 @@ public class JdbcApplication {
 
         StudentDao studentDao = context.getBean(StudentDao.class);
         studentDao.save(1,"Angel","Hernandez","100");
+        studentDao.save(2,"Albert","Hernandez","100");
+        studentDao.save(3,"Erik","Hernandez","100");
     }
 }
