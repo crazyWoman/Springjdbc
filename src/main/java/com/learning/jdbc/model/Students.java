@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 public class Students implements Serializable {
 
-    private Integer studentId;
+    private Integer id;
 
 
     private String firstName;
@@ -19,12 +19,12 @@ public class Students implements Serializable {
 
     private Integer countryId;
 
-    public Integer getStudentId() {
-        return studentId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -41,6 +41,16 @@ public class Students implements Serializable {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Students{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", countryId=" + countryId +
+                '}';
     }
 
     public Integer getCountryId() {

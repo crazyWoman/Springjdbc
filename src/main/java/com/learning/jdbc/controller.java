@@ -19,7 +19,7 @@ public class controller {
     @PutMapping("/studentLastName/{lastName}/{firstName}/{countryid")
     public void getByLastNameAndFirstName(@PathVariable final String StudentslastName,
                                           @PathVariable final String firstName,
-                                          @PathVariable final int countryId) {
+                                          @PathVariable final String countryId) {
 
         studentDao.update(firstName, StudentslastName, countryId);
 
