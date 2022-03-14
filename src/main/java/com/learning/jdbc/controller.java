@@ -13,15 +13,15 @@ import java.util.List;
 @RestController
 public class controller {
 
-    @Autowired
-    StudentDao studentDao;
+    //@Autowired
+    //StudentDao studentDao;
 
     @PutMapping("/studentLastName/{lastName}/{firstName}/{countryid")
     public void getByLastNameAndFirstName(@PathVariable final String StudentslastName,
                                           @PathVariable final String firstName,
                                           @PathVariable final String countryId) {
 
-        studentDao.update(firstName, StudentslastName, countryId);
+        //studentDao.update(firstName, StudentslastName, countryId);
 
     }
 }
